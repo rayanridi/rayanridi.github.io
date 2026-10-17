@@ -1,0 +1,95 @@
+:root {
+    --bg-black: #0d1117;
+    --purple-glow: #7c3aed;
+    --violet-accent: #a855f7;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-border: rgba(168, 85, 247, 0.25);
+    --text-color: #f3f4f6;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-black);
+    /* Creates the glowing purple top gradient overlay */
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(124, 58, 237, 0.45) 0%, rgba(13, 17, 23, 0.95) 70%),
+        radial-gradient(circle at 50% 30%, rgba(168, 85, 247, 0.2) 0%, transparent 60%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.script-font {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 3.5rem;
+    color: var(--violet-accent);
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+    margin-bottom: 10px;
+}
+
+.serif-font {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: #e5e7eb;
+}
+
+.links a {
+    color: var(--violet-accent);
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #c084fc;
+    text-decoration: underline;
+}
+
+/* Glass-style container card */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5),
+                0 0 15px 0 rgba(168, 85, 247, 0.15);
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--violet-accent);
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
